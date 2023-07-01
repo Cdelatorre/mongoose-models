@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <h1 class="text-center">Cities</h1>
+  <div class="row">
+    {{#each cities}}
+      {{> cityCard}}
+    {{/each}}
+  </div>
+</div>
+
+<div class="mt-5">
+  <p class="text-center">
+    <form action="/cities" method="POST">
+      <button type="submit" class="btn btn-lg btn-dark">New</button>
+    </form>
+  </p>
+</div>
